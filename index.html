@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BEYGOM | پوشاک زنانه</title>
+    <title>چری اکسسوری | بدلیجات و اکسسوری مو</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -15,28 +15,32 @@
         }
         
         :root {
-            --primary: #FFFFFF; /* سفید */
-            --secondary: #FFF8E1; /* طلایی بسیار روشن */
-            --accent: #B8860B; /* طلایی تیره */
-            --accent-light: #DAA520; /* طلایی روشن */
-            --accent2: #FFD54F; /* طلایی ملایم */
-            --text: #212121; /* مشکی */
-            --text-light: #424242; /* خاکستری تیره */
-            --background: #FFFFFF; /* سفید */
+            --primary: #FDF6E3; /* کرمی */
+            --secondary: #F8F0E3; /* کرمی تیره */
+            --accent: #556B2F; /* سبز زیتونی */
+            --accent-light: #6B8E23; /* سبز زیتونی روشن */
+            --accent2: #8FBC8F; /* سبز روشن */
+            --text: #2F4F4F; /* متن مشکی مایل به سبز */
+            --text-light: #556B2F; /* متن سبز زیتونی */
+            --background: #FFF8DC; /* بژ روشن */
             --white: #FFFFFF;
             --shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
             --shadow-heavy: 0 15px 40px rgba(0, 0, 0, 0.15);
             --radius: 20px;
-            --gradient: linear-gradient(135deg, #FFFFFF 0%, #FFF8E1 100%);
-            --gradient-accent: linear-gradient(135deg, #B8860B 0%, #DAA520 100%);
+            --gradient: linear-gradient(135deg, #FDF6E3 0%, #F8F0E3 100%);
+            --gradient-accent: linear-gradient(135deg, #556B2F 0%, #6B8E23 100%);
         }
         
         body {
-            background: var(--background);
+            background: var(--gradient);
             color: var(--text);
             line-height: 1.7;
             overflow-x: hidden;
             font-family: 'Vazirmatn', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('https://i.ibb.co/jkn0cRXf/cherry-pattern.png');
+            background-size: 300px;
+            background-repeat: repeat;
+            background-attachment: fixed;
         }
         
         /* Loading Screen */
@@ -67,14 +71,14 @@
             object-fit: cover;
             margin-bottom: 2rem;
             border: 5px solid var(--accent);
-            box-shadow: 0 0 30px rgba(184, 134, 11, 0.5);
+            box-shadow: 0 0 30px rgba(85, 107, 47, 0.5);
             animation: pulse 2s infinite;
         }
         
         .loading-spinner {
             width: 60px;
             height: 60px;
-            border: 5px solid rgba(184, 134, 11, 0.3);
+            border: 5px solid rgba(85, 107, 47, 0.3);
             border-radius: 50%;
             border-top-color: var(--accent);
             animation: spin 1s linear infinite;
@@ -92,7 +96,7 @@
         
         /* Header Styles */
         header {
-            background: var(--background);
+            background: var(--gradient);
             color: var(--text);
             padding: 1.2rem 0;
             box-shadow: var(--shadow-heavy);
@@ -121,14 +125,14 @@
             height: 70px;
             border-radius: 50%;
             object-fit: cover;
-            box-shadow: 0 8px 25px rgba(184, 134, 11, 0.3);
+            box-shadow: 0 8px 25px rgba(85, 107, 47, 0.3);
             transition: all 0.4s ease;
             border: 3px solid var(--accent);
         }
         
         .logo:hover .logo-img {
             transform: rotate(15deg) scale(1.1);
-            box-shadow: 0 12px 35px rgba(184, 134, 11, 0.5);
+            box-shadow: 0 12px 35px rgba(85, 107, 47, 0.5);
         }
         
         .logo-text {
@@ -157,15 +161,15 @@
         }
         
         nav a:hover {
-            background: rgba(184, 134, 11, 0.15);
+            background: rgba(85, 107, 47, 0.15);
             transform: translateY(-2px);
         }
         
         /* Hero Section */
         .hero {
             background: 
-                linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 248, 225, 0.9)),
-                url('https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+                linear-gradient(rgba(253, 246, 227, 0.85), rgba(248, 240, 227, 0.9)),
+                url('https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1180&q=80');
             background-size: cover;
             background-position: center;
             color: var(--text);
@@ -185,7 +189,7 @@
             right: 0;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle at 70% 30%, rgba(184, 134, 11, 0.2) 0%, transparent 50%);
+            background: radial-gradient(circle at 70% 30%, rgba(85, 107, 47, 0.2) 0%, transparent 50%);
         }
         
         .hero-container {
@@ -263,7 +267,7 @@
         
         .btn-primary:hover {
             transform: translateY(-8px) scale(1.05);
-            box-shadow: 0 15px 35px rgba(184, 134, 11, 0.4);
+            box-shadow: 0 15px 35px rgba(85, 107, 47, 0.4);
         }
         
         .btn-secondary {
@@ -273,7 +277,7 @@
         }
         
         .btn-secondary:hover {
-            background-color: rgba(184, 134, 11, 0.15);
+            background-color: rgba(85, 107, 47, 0.15);
             transform: translateY(-8px) scale(1.05);
         }
         
@@ -304,7 +308,7 @@
             right: 0;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle at top left, rgba(184, 134, 11, 0.3) 0%, transparent 50%);
+            background: radial-gradient(circle at top left, rgba(85, 107, 47, 0.3) 0%, transparent 50%);
         }
         
         .quote-text {
@@ -315,7 +319,7 @@
             position: relative;
             z-index: 1;
             color: var(--accent);
-            text-shadow: 0 0 10px rgba(184, 134, 11, 0.3);
+            text-shadow: 0 0 10px rgba(85, 107, 47, 0.3);
         }
         
         .quote-subtext {
@@ -323,7 +327,7 @@
             opacity: 0.9;
             position: relative;
             z-index: 1;
-            color: var(--text);
+            color: var(--accent2);
         }
         
         /* Quick Contact Section */
@@ -356,7 +360,7 @@
             border-radius: var(--radius);
             background: var(--secondary);
             box-shadow: var(--shadow);
-            border: 1px solid rgba(184, 134, 11, 0.1);
+            border: 1px solid rgba(85, 107, 47, 0.1);
         }
         
         .contact-item:hover {
@@ -374,7 +378,7 @@
             justify-content: center;
             font-size: 1.6rem;
             color: var(--white);
-            box-shadow: 0 8px 20px rgba(184, 134, 11, 0.3);
+            box-shadow: 0 8px 20px rgba(85, 107, 47, 0.3);
             flex-shrink: 0;
         }
         
@@ -416,7 +420,7 @@
             font-size: 1.5rem;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             position: relative;
-            border: 1px solid rgba(184, 134, 11, 0.2);
+            border: 1px solid rgba(85, 107, 47, 0.2);
         }
         
         .social-link::after {
@@ -427,7 +431,7 @@
             width: 100%;
             height: 100%;
             border-radius: 50%;
-            background: rgba(184, 134, 11, 0.1);
+            background: rgba(85, 107, 47, 0.1);
             opacity: 0;
             transition: opacity 0.3s;
         }
@@ -439,7 +443,7 @@
         .social-link:hover {
             background: var(--gradient-accent);
             transform: translateY(-8px) scale(1.1);
-            box-shadow: 0 10px 25px rgba(184, 134, 11, 0.4);
+            box-shadow: 0 10px 25px rgba(85, 107, 47, 0.4);
             color: var(--white);
         }
         
@@ -507,6 +511,11 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
         
+        .contact-btn.whatsapp {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+        }
+        
         .contact-btn.telegram {
             background: linear-gradient(135deg, #0088cc, #005f8b);
             color: white;
@@ -527,6 +536,11 @@
             color: white;
         }
         
+        .contact-btn.email {
+            background: linear-gradient(135deg, #EA4335, #D14836);
+            color: white;
+        }
+        
         .contact-btn:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
@@ -535,7 +549,7 @@
         /* Features Section */
         .features {
             padding: 6rem 2rem;
-            background: var(--background);
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
             color: var(--text);
             position: relative;
         }
@@ -547,7 +561,7 @@
             right: 0;
             width: 100%;
             height: 100%;
-            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="none"/><path d="M30,30 L70,30 L70,70 L30,70 Z" stroke="%23B8860B" stroke-width="1" fill="none" opacity="0.1"/></svg>');
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="none"/><path d="M30,30 L70,30 L70,70 L30,70 Z" stroke="%23556B2F" stroke-width="1" fill="none" opacity="0.1"/></svg>');
             background-size: 100px;
             opacity: 0.1;
         }
@@ -587,14 +601,14 @@
         }
         
         .feature-card {
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(255, 255, 255, 0.7);
             backdrop-filter: blur(10px);
             border-radius: var(--radius);
             padding: 3rem 2rem;
             box-shadow: var(--shadow);
             transition: all 0.4s ease;
             text-align: center;
-            border: 1px solid rgba(184, 134, 11, 0.2);
+            border: 1px solid rgba(85, 107, 47, 0.2);
             position: relative;
             overflow: hidden;
         }
@@ -606,7 +620,7 @@
             right: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, transparent, rgba(184, 134, 11, 0.1));
+            background: linear-gradient(135deg, transparent, rgba(85, 107, 47, 0.1));
             opacity: 0;
             transition: opacity 0.3s;
         }
@@ -623,7 +637,7 @@
         .feature-icon {
             width: 90px;
             height: 90px;
-            background: rgba(184, 134, 11, 0.2);
+            background: rgba(85, 107, 47, 0.2);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -637,7 +651,7 @@
         
         .feature-card:hover .feature-icon {
             transform: scale(1.2) rotate(15deg);
-            background: rgba(184, 134, 11, 0.3);
+            background: rgba(85, 107, 47, 0.3);
         }
         
         .feature-card h3 {
@@ -681,7 +695,7 @@
             right: 0;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle at top left, rgba(184, 134, 11, 0.3) 0%, transparent 50%);
+            background: radial-gradient(circle at top left, rgba(85, 107, 47, 0.3) 0%, transparent 50%);
         }
         
         .add-to-home-content {
@@ -699,7 +713,7 @@
             border-radius: 50%;
             object-fit: cover;
             border: 4px solid var(--accent);
-            box-shadow: 0 10px 30px rgba(184, 134, 11, 0.4);
+            box-shadow: 0 10px 30px rgba(85, 107, 47, 0.4);
             flex-shrink: 0;
         }
         
@@ -724,7 +738,7 @@
         
         /* Footer */
         footer {
-            background: var(--background);
+            background: var(--gradient);
             color: var(--text);
             padding: 4rem 2rem 2rem;
             border-top: 3px solid var(--accent);
@@ -785,7 +799,7 @@
             text-align: center;
             margin-top: 4rem;
             padding-top: 2rem;
-            border-top: 1px solid rgba(184, 134, 11, 0.2);
+            border-top: 1px solid rgba(85, 107, 47, 0.2);
             color: var(--text);
             font-size: 1rem;
         }
@@ -794,7 +808,7 @@
         .visit-smart-section {
             padding: 3rem 2rem;
             background: var(--background);
-            border-top: 1px solid rgba(184, 134, 11, 0.2);
+            border-top: 1px solid rgba(85, 107, 47, 0.2);
         }
         
         .visit-smart-container {
@@ -907,7 +921,7 @@
         .modal-footer {
             margin-top: 2rem;
             padding-top: 1.5rem;
-            border-top: 1px solid rgba(184, 134, 11, 0.2);
+            border-top: 1px solid rgba(85, 107, 47, 0.2);
         }
         
         .modal-btn {
@@ -945,6 +959,93 @@
             display: block;
         }
         
+        /* Card Number Section */
+        .card-section {
+            padding: 4rem 2rem;
+            background: var(--background);
+        }
+        
+        .card-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: var(--gradient);
+            padding: 3rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-heavy);
+            color: var(--text);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid var(--accent);
+        }
+        
+        .card-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at top left, rgba(85, 107, 47, 0.3) 0%, transparent 50%);
+        }
+        
+        .card-title {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            color: var(--text);
+        }
+        
+        .card-number {
+            font-size: 1.5rem;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            margin-bottom: 2rem;
+            font-family: monospace;
+            letter-spacing: 2px;
+            border: 1px solid rgba(85, 107, 47, 0.3);
+            cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
+        }
+        
+        .card-number:hover {
+            background: rgba(255, 255, 255, 0.9);
+            transform: translateY(-5px);
+        }
+        
+        .card-number::after {
+            content: 'کپی';
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: var(--accent);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .card-number:hover::after {
+            opacity: 1;
+        }
+        
+        .card-name {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            color: var(--text);
+        }
+        
+        .card-note {
+            font-size: 1rem;
+            color: var(--text-light);
+            margin-top: 1.5rem;
+        }
+        
         /* Animations */
         @keyframes fadeInUp {
             from {
@@ -974,7 +1075,7 @@
             transform: translateX(-50%);
             width: 80%;
             height: 30px;
-            background: radial-gradient(ellipse at center, rgba(184, 134, 11, 0.4) 0%, transparent 70%);
+            background: radial-gradient(ellipse at center, rgba(85, 107, 47, 0.4) 0%, transparent 70%);
             filter: blur(10px);
             z-index: -1;
         }
@@ -1026,7 +1127,7 @@
                 padding: 4rem 1rem;
             }
             
-            .quick-contact-section, .quote-section, .add-to-home-section {
+            .quick-contact-section, .quote-section, .add-to-home-section, .card-section {
                 padding: 3rem 1rem;
             }
             
@@ -1055,6 +1156,10 @@
             .quote-text {
                 font-size: 1.8rem;
             }
+            
+            .card-number {
+                font-size: 1.2rem;
+            }
         }
         
         @media (max-width: 480px) {
@@ -1067,11 +1172,11 @@
                 font-size: 2rem;
             }
             
-            .features, .quick-contact-section, .quote-section, .add-to-home-section {
+            .features, .quick-contact-section, .quote-section, .add-to-home-section, .card-section {
                 padding: 3rem 1rem;
             }
             
-            .feature-card, .quick-contact, .quote-container, .add-to-home-container {
+            .feature-card, .quick-contact, .quote-container, .add-to-home-container, .card-container {
                 padding: 2rem 1.5rem;
             }
             
@@ -1089,13 +1194,18 @@
             .quote-text {
                 font-size: 1.5rem;
             }
+            
+            .card-number {
+                font-size: 1rem;
+                padding: 1rem;
+            }
         }
     </style>
 </head>
 <body>
     <!-- Loading Screen -->
     <div class="loading-screen" id="loadingScreen">
-        <img src="https://i.ibb.co/MycSpXLg/logo.png" alt="BEYGOM Logo" class="loading-logo">
+        <img src="https://i.ibb.co/gbL7grV3/logo.png" alt="چری اکسسوری Logo" class="loading-logo">
         <div class="loading-spinner"></div>
     </div>
 
@@ -1103,14 +1213,15 @@
     <header>
         <div class="header-container">
             <div class="logo">
-                <img src="https://i.ibb.co/MycSpXLg/logo.png" alt="BEYGOM Logo" class="logo-img">
-                <div class="logo-text">BEYGOM</div>
+                <img src="https://i.ibb.co/gbL7grV3/logo.png" alt="چری اکسسوری Logo" class="logo-img">
+                <div class="logo-text">چری اکسسوری</div>
             </div>
             <nav>
                 <ul>
                     <li><a href="#home">خانه</a></li>
                     <li><a href="#services">محصولات</a></li>
                     <li><a href="#contact">تماس</a></li>
+                    <li><a href="#card">پرداخت</a></li>
                 </ul>
             </nav>
         </div>
@@ -1119,11 +1230,11 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-container">
-            <h1>BEYGOM | پوشاک زنانه</h1>
-            <p>تمامی اجناس وارداتی | خرید حضوری و آنلاین | ساعت کاری 10 تا 22</p>
+            <h1>چری اکسسوری | بدلیجات و اکسسوری مو</h1>
+            <p>کار گالری ما اینه که استایل تو رو خاص تر کنه 🫶🏻🍒✨️</p>
             <div class="hero-buttons">
                 <a href="#services" class="btn btn-primary">
-                    <i class="fas fa-shopping-bag"></i> محصولات ما
+                    <i class="fas fa-gem"></i> محصولات ما
                 </a>
                 <a href="#contact" class="btn btn-secondary">
                     <i class="fas fa-phone-alt"></i> تماس با ما
@@ -1136,8 +1247,20 @@
     <!-- Quote Section -->
     <section class="quote-section">
         <div class="quote-container">
-            <div class="quote-text">تمامی اجناس وارداتی</div>
-            <div class="quote-subtext">خرید حضوری و آنلاین | ساعت کاری 10 تا 22</div>
+            <div class="quote-text">کار گالری ما اینه که استایل تو رو خاص تر کنه</div>
+            <div class="quote-subtext">🫶🏻🍒✨️</div>
+        </div>
+    </section>
+
+    <!-- Card Number Section -->
+    <section class="card-section" id="card">
+        <div class="card-container">
+            <h3 class="card-title">شماره کارت بانکی</h3>
+            <div class="card-number" id="cardNumber">
+                6063 7312 6513 4933
+            </div>
+            <div class="card-name">به نام: حنانه میزبان</div>
+            <p class="card-note">برای کپی کردن شماره کارت، روی آن کلیک کنید</p>
         </div>
     </section>
 
@@ -1151,8 +1274,8 @@
                     </div>
                     <div class="contact-details">
                         <h3>آدرس کامل فروشگاه</h3>
-                        <p>پروما طبقه +۱ واحد ۱۱۸</p>
-                        <p>BEYGOM</p>
+                        <p>پاساژ پروما طبقه اول واحد ۱۳۸</p>
+                        <p>چری اکسسوری</p>
                     </div>
                 </div>
                 
@@ -1162,8 +1285,7 @@
                     </div>
                     <div class="contact-details">
                         <h3>شماره تماس</h3>
-                        <a href="tel:09359432508">۰۹۳۵۹۴۳۲۵۰۸</a>
-                        <a href="tel:09152247905">۰۹۱۵۲۲۴۷۹۰۵</a>
+                        <a href="tel:09030873475">۰۹۰۳۰۸۷۳۴۷۵</a>
                     </div>
                 </div>
                 
@@ -1173,16 +1295,11 @@
                     </div>
                     <div class="contact-details">
                         <h3>شبکه‌های اجتماعی</h3>
-                        <p>اینستاگرام: beygom118</p>
-                        <p>تلگرام: beygomgallery</p>
+                        <p>اینستاگرام: chery_accessor</p>
                         <div class="social-links">
-                            <a href="https://instagram.com/beygom118" class="social-link" target="_blank">
+                            <a href="https://instagram.com/chery_accessor" class="social-link" target="_blank">
                                 <i class="fab fa-instagram"></i>
                                 <span class="social-text">اینستاگرام</span>
-                            </a>
-                            <a href="https://t.me/beygomgallery" class="social-link" target="_blank">
-                                <i class="fab fa-telegram"></i>
-                                <span class="social-text">تلگرام</span>
                             </a>
                         </div>
                     </div>
@@ -1194,19 +1311,19 @@
                 <p>برای دریافت اطلاعات بیشتر، مشاوره رایگان و خرید، از طریق یکی از روش‌های زیر با ما در تماس باشید</p>
                 
                 <div class="contact-buttons">
-                    <a href="https://t.me/beygomgallery" class="contact-btn telegram" target="_blank">
-                        <i class="fab fa-telegram"></i> تلگرام
+                    <a href="https://wa.me/989030873475" class="contact-btn whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> واتساپ
                     </a>
                     
-                    <a href="https://instagram.com/beygom118" class="contact-btn instagram" target="_blank">
+                    <a href="https://instagram.com/chery_accessor" class="contact-btn instagram" target="_blank">
                         <i class="fab fa-instagram"></i> اینستاگرام
                     </a>
                     
-                    <a href="tel:09359432508" class="contact-btn call">
+                    <a href="tel:09030873475" class="contact-btn call">
                         <i class="fas fa-phone-alt"></i> تماس تلفنی
                     </a>
                     
-                    <a href="https://www.google.com/maps/search/?api=1&query=پروما طبقه +۱ واحد ۱۱۸" class="contact-btn map" target="_blank">
+                    <a href="https://www.google.com/maps/search/?api=1&query=پاساژ پروما طبقه اول واحد ۱۳۸" class="contact-btn map" target="_blank">
                         <i class="fas fa-map-marked-alt"></i> مسیریابی
                     </a>
                 </div>
@@ -1217,49 +1334,49 @@
     <!-- Features Section -->
     <section class="features" id="services">
         <div class="section-title">
-            <h2>محصولات BEYGOM</h2>
-            <p>انواع پوشاک زنانه با کیفیت بالا و قیمت مناسب | تمامی اجناس وارداتی</p>
+            <h2>محصولات چری اکسسوری</h2>
+            <p>انواع بدلیجات و اکسسوری مو با کیفیت بالا و قیمت مناسب</p>
         </div>
         
         <div class="features-grid">
             <div class="feature-card">
                 <div class="feature-icon">
-                    <i class="fas fa-tshirt"></i>
+                    <i class="fas fa-gem"></i>
                 </div>
-                <h3>پوشاک زنانه</h3>
-                <p>انواع پوشاک زنانه با کیفیت و برندهای معتبر</p>
+                <h3>گردنبند</h3>
+                <p>انواع گردنبندهای زیبا و شیک برای استایل خاص شما</p>
             </div>
             
             <div class="feature-card">
                 <div class="feature-icon">
-                    <i class="fas fa-tshirt"></i>
+                    <i class="fas fa-ring"></i>
                 </div>
-                <h3>بافت زنانه</h3>
-                <p>بافت‌های زنانه با کیفیت و مدل‌های متنوع</p>
+                <h3>انگشتر</h3>
+                <p>انگشترهای متنوع و زیبا برای دستانی جذاب</p>
             </div>
             
             <div class="feature-card">
                 <div class="feature-icon">
-                    <i class="fas fa-female"></i>
+                    <i class="fas fa-gem"></i>
                 </div>
-                <h3>دامن</h3>
-                <p>انواع دامن با کیفیت و تنوع بالا</p>
+                <h3>گوشواره</h3>
+                <p>گوشواره‌های فانتزی و شیک برای ظاهری جذاب</p>
             </div>
 
             <div class="feature-card">
                 <div class="feature-icon">
-                    <i class="fas fa-tshirt"></i>
+                    <i class="fas fa-hands"></i>
                 </div>
-                <h3>دورس زنانه</h3>
-                <p>دورس‌های زنانه با کیفیت و مدل‌های روز</p>
+                <h3>دستبند</h3>
+                <p>دستبندهای زیبا و متنوع برای مچ‌هایی شیک</p>
             </div>
             
             <div class="feature-card">
                 <div class="feature-icon">
-                    <i class="fas fa-shopping-bag"></i>
+                    <i class="fas fa-star"></i>
                 </div>
-                <h3>خرید آنلاین</h3>
-                <p>امکان خرید آنلاین و ارسال به سراسر کشور</p>
+                <h3>اکسسوری مو</h3>
+                <p>انواع کش مو، گیره مو، تل و کلیپس برای موهایی جذاب</p>
             </div>
             
             <div class="feature-card">
@@ -1267,7 +1384,7 @@
                     <i class="fas fa-award"></i>
                 </div>
                 <h3>تضمین کیفیت</h3>
-                <p>استفاده از بهترین محصولات و ارائه خدمات با کیفیت</p>
+                <p>استفاده از بهترین متریال و ارائه محصولات با کیفیت</p>
             </div>
         </div>
     </section>
@@ -1276,7 +1393,7 @@
     <section class="add-to-home-section">
         <div class="add-to-home-container">
             <div class="add-to-home-content">
-                <img src="https://i.ibb.co/MycSpXLg/logo.png" alt="BEYGOM Logo" class="add-to-home-logo">
+                <img src="https://i.ibb.co/gbL7grV3/logo.png" alt="چری اکسسوری Logo" class="add-to-home-logo">
                 <div class="add-to-home-text">
                     <h3>افزودن به صفحه اصلی</h3>
                     <p>برای دسترسی سریع‌تر به فروشگاه، این صفحه را به صفحه اصلی دستگاه خود اضافه کنید. با این کار می‌توانید مانند یک اپلیکیشن به فروشگاه ما دسترسی داشته باشید.</p>
@@ -1292,28 +1409,27 @@
     <footer>
         <div class="footer-container">
             <div class="footer-col">
-                <h4>BEYGOM</h4>
-                <p>تمامی اجناس وارداتی | خرید حضوری و آنلاین | ساعت کاری 10 تا 22</p>
+                <h4>چری اکسسوری</h4>
+                <p>کار گالری ما اینه که استایل تو رو خاص تر کنه 🫶🏻🍒✨️</p>
             </div>
             
             <div class="footer-col">
                 <h4>محصولات ما</h4>
                 <ul>
-                    <li><i class="fas fa-tshirt"></i> پوشاک زنانه</li>
-                    <li><i class="fas fa-tshirt"></i> بافت زنانه</li>
-                    <li><i class="fas fa-female"></i> دامن</li>
-                    <li><i class="fas fa-tshirt"></i> دورس زنانه</li>
+                    <li><i class="fas fa-gem"></i> گردنبند</li>
+                    <li><i class="fas fa-ring"></i> انگشتر</li>
+                    <li><i class="fas fa-gem"></i> گوشواره</li>
+                    <li><i class="fas fa-hands"></i> دستبند</li>
+                    <li><i class="fas fa-star"></i> اکسسوری مو</li>
                 </ul>
             </div>
             
             <div class="footer-col">
                 <h4>تماس با ما</h4>
                 <ul>
-                    <li><i class="fas fa-map-marker-alt"></i> پروما طبقه +۱ واحد ۱۱۸</li>
-                    <li><i class="fas fa-phone-alt"></i> ۰۹۳۵۹۴۳۲۵۰۸</li>
-                    <li><i class="fas fa-phone-alt"></i> ۰۹۱۵۲۲۴۷۹۰۵</li>
-                    <li><i class="fab fa-instagram"></i> اینستاگرام: beygom118</li>
-                    <li><i class="fab fa-telegram"></i> تلگرام: beygomgallery</li>
+                    <li><i class="fas fa-map-marker-alt"></i> پاساژ پروما طبقه اول واحد ۱۳۸</li>
+                    <li><i class="fas fa-phone-alt"></i> ۰۹۰۳۰۸۷۳۴۷۵</li>
+                    <li><i class="fab fa-instagram"></i> اینستاگرام: chery_accessor</li>
                 </ul>
             </div>
         </div>
@@ -1396,6 +1512,34 @@
 
         modalOkBtn.addEventListener('click', () => {
             addToHomeModal.classList.remove('show');
+        });
+
+        // Card Number Copy Functionality
+        const cardNumber = document.getElementById('cardNumber');
+        const copyNotification = document.getElementById('copyNotification');
+
+        cardNumber.addEventListener('click', () => {
+            const textToCopy = '6063 7312 6513 4933';
+            
+            // Create a temporary textarea element
+            const textArea = document.createElement('textarea');
+            textArea.value = textToCopy;
+            document.body.appendChild(textArea);
+            
+            // Select and copy the text
+            textArea.select();
+            document.execCommand('copy');
+            
+            // Remove the temporary element
+            document.body.removeChild(textArea);
+            
+            // Show notification
+            copyNotification.classList.add('show');
+            
+            // Hide notification after 2 seconds
+            setTimeout(() => {
+                copyNotification.classList.remove('show');
+            }, 2000);
         });
 
         // Smooth scrolling for anchor links
